@@ -26,6 +26,8 @@ plot(df$DateTime, df$Sub_metering_1, type="l", xlab="",
 	ylab="Energy sub metering")
 lines(df$DateTime, df$Sub_metering_2, type="l", xlab="", col="red")
 lines(df$DateTime, df$Sub_metering_3, type="l", xlab="", col="blue")
+
+# Add a legend in the top-right corner of the plot:
 legend(x="topright", col=c("black", "red", "blue"), lty=1,
 	legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 dev.off()
