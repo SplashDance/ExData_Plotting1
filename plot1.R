@@ -17,8 +17,9 @@ dataset <- within(dataset, { DateTime=format(as.POSIXct(paste(Date, Time)),
 df <- subset(dataset, (Date == "2007-02-01") | (Date == "2007-02-02"))
 
 # Creates histogram as a PNG file:
-par(cex=0.8)
 png(filename="plot1.png", width=480, height=480)
+# par(cex=0.8)
+
 with(df, 
 	hist(df$Global_active_power, xlab="Global Active Power (kilowatts)",
        col='red', main='Global Active Power'))

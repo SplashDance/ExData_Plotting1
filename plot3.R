@@ -5,6 +5,9 @@
 # Sets the Working Directory:
 setwd("~/Desktop/MOOCs/Coursera/Data Science/Exploratory Data Analysis/Assignment-1")
 
+## Note: This approach to loading the data into the data frame was suggested 
+## on the Coursera discussion boards as a faster alternative to the one I
+## implemented in plot1.R:
 # Loads the column names of the data frame:
 datafile <- 'household_power_consumption.txt'
 column_names <- colnames(read.table(datafile, nrow = 1, header = TRUE, sep=";"))
